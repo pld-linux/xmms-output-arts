@@ -11,18 +11,16 @@ Source0:	http://home.earthlink.net/~bheath/xmms-arts/xmmsarts-%{version}.tar.gz
 # Source0-md5: 0339aec5d67315da4a8242271cfc9f05
 Patch0:		%{name}-nocmallocc.patch
 URL:		http://home.earthlink.net/~bheath/xmms-arts/
-BuildRequires:	arts-devel >= 1.0.3
+BuildRequires:	artsc-devel >= 1.0.3
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk+-devel
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
-BuildRequires:	glib2-devel
 Requires:	xmms
 Provides:	xmms-output-plugin
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 This plugin allows xmms to play sounds though aRts sound servers. This
@@ -47,7 +45,6 @@ Plugin de saída para o XMMS trabalhar com o servidor de som aRts.
 %patch0 -p1
 
 %build
-CFLAGS="-I%{_includedir}"
 rm -f missing
 %{__libtoolize}
 %{__aclocal}
