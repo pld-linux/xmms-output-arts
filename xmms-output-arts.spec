@@ -46,7 +46,7 @@ Plugin de saída para o XMMS trabalhar com o servidor de som aRts.
 %build
 CFLAGS="-I%{_includedir}"
 rm -f missing
-libtoolize --copy --force
+%{__libtoolize}
 aclocal
 %{__autoconf}
 %{__automake}
