@@ -8,7 +8,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://havardk.xmms.org/plugins/arts_output/arts_output-%{version}.tar.gz
-# Source0-md5: 6d028255ed86e37211bbda0122c14483
+# Source0-md5:	6d028255ed86e37211bbda0122c14483
 URL:		http://havardk.xmms.org/plugins/arts_output/
 BuildRequires:	artsc-devel >= 1.0.3
 BuildRequires:	autoconf
