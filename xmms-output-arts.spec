@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 
-%description 
+%description
 This plugin allows xmms to play sounds though aRts sound servers. This
 is a must-have for KDE2 users, because aRts, which is by default
 started in this environment, uses DSP, thus preventing oss-plugin from
