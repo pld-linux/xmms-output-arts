@@ -8,6 +8,7 @@ Release:	5
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://home.earthlink.net/~bheath/xmms-arts/xmmsarts-%{version}.tar.gz
+# Source0-md5: 0339aec5d67315da4a8242271cfc9f05
 Patch0:		%{name}-nocmallocc.patch
 URL:		http://home.earthlink.net/~bheath/xmms-arts/
 BuildRequires:	arts-devel >= 1.0.3
