@@ -3,7 +3,7 @@ Summary(pl):	Wtyczka dla XMMS odtwarzaj±ca przez aRts
 Name:  		xmms-output-arts
 Version: 	0.4
 Release: 	1
-Copyright: 	GPL
+License: 	GPL
 Group:		Development/Libraries
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
