@@ -1,7 +1,7 @@
-Summary:	Output plugin for XMMS for use with the aRts sound server.
-Summary(es):	Plugin de salida para XMMS para uso con el paquete aRts.
-Summary(pl):	Wtyczka dla XMMS odtwarzaj±ca przez aRts.
-Summary(pt_BR):	Plugin de saída para o XMMS para uso com o servidor de som aRts.
+Summary:	Output plugin for XMMS for use with the aRts sound server
+Summary(es):	Plugin de salida para XMMS para uso con el paquete aRts
+Summary(pl):	Wtyczka dla XMMS odtwarzaj±ca przez aRts
+Summary(pt_BR):	Plugin de saída para o XMMS para uso com o servidor de som aRts
 Name:		xmms-output-arts
 Version:	0.4
 Release:	3
