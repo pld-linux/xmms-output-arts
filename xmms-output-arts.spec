@@ -6,7 +6,7 @@ Name:		xmms-output-arts
 Version:	0.4
 Release:	5
 License:	GPL
-Group:		X11/Applications/Multimedia
+Group:		X11/Applications/Sound
 Source0:	http://home.earthlink.net/~bheath/xmms-arts/xmmsarts-%{version}.tar.gz
 Patch0:		%{name}-nocmallocc.patch
 URL:		http://home.earthlink.net/~bheath/xmms-arts/
