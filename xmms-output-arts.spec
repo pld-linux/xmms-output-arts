@@ -32,7 +32,7 @@ pakiet dla u¿ytkowników KDE2, poniewa¿ aRts, domy¶lnie uruchamiany w tym
 
 %build
 export CFLAGS="-I/usr/X11R6/include"
-%configure
+%configure2_13
 %{__make}
 
 %install
