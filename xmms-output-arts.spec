@@ -20,7 +20,6 @@ Requires:	xmms
 Provides:	xmms-output-plugin
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 This plugin allows xmms to play sounds though aRts sound servers. This
