@@ -4,7 +4,7 @@ Summary(pl):	Wtyczka dla XMMS odtwarzaj±ca przez aRts
 Summary(pt_BR):	Plugin de saída para o XMMS para uso com o servidor de som aRts
 Name:		xmms-output-arts
 Version:	0.4
-Release:	5
+Release:	6
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://home.earthlink.net/~bheath/xmms-arts/xmmsarts-%{version}.tar.gz
@@ -16,6 +16,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk+-devel
 BuildRequires:	libtool
+BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
 Requires:	xmms
 Provides:	xmms-output-plugin
@@ -57,7 +58,8 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -65,4 +67,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README NEWS AUTHORS
-%attr(755,root,root) %{_libdir}/xmms/Output/*
+%attr(755,root,root) %{xmms_output_plugindir}/*
