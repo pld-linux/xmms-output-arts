@@ -10,6 +10,7 @@ Group(pl):	Programowanie/Biblioteki
 URL: 		http://home.earthlink.net/~bheath/xmms-arts/
 Source0:	http://home.earthlink.net/~bheath/xmms-arts/xmmsarts-%{version}.tar.gz
 Requires:	xmms
+BuildRequires:	arts-devel
 BuildRequires:	xmms-devel
 buildRequires:	gtk+-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
