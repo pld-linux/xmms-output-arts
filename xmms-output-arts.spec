@@ -3,14 +3,13 @@ Summary(es):	Plugin de salida para XMMS para uso con el paquete aRts
 Summary(pl):	Wtyczka dla XMMS odtwarzaj±ca przez aRts
 Summary(pt_BR):	Plugin de saída para o XMMS para uso com o servidor de som aRts
 Name:		xmms-output-arts
-Version:	0.4
-Release:	6
+Version:	0.7.1
+Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
-Source0:	http://home.earthlink.net/~bheath/xmms-arts/xmmsarts-%{version}.tar.gz
-# Source0-md5: 0339aec5d67315da4a8242271cfc9f05
-Patch0:		%{name}-nocmallocc.patch
-URL:		http://home.earthlink.net/~bheath/xmms-arts/
+Source0:	http://havardk.xmms.org/plugins/arts_output/arts_output-%{version}.tar.gz
+# Source0-md5: 6d028255ed86e37211bbda0122c14483
+URL:		http://havardk.xmms.org/plugins/arts_output/
 BuildRequires:	artsc-devel >= 1.0.3
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -41,8 +40,7 @@ dzia³anie wtyczce OSS.
 Plugin de saída para o XMMS trabalhar com o servidor de som aRts.
 
 %prep
-%setup -q -n xmms-arts-%{version}
-%patch0 -p1
+%setup -q -n arts_output-%{version}
 
 %build
 rm -f missing
@@ -50,7 +48,9 @@ rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}
+
 %configure
+
 %{__make}
 
 %install
@@ -66,3 +66,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README NEWS AUTHORS
 %attr(755,root,root) %{xmms_output_plugindir}/*
+%attr(755,root,root) %{_bindir}/*
