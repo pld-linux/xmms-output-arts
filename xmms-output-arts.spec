@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This plugin allows XMMS to play sounds though aRts sound servers. This
-is a must-have for KDE2 users, because aRts, which is by default
+is a must-have for KDE users, because aRts, which is by default
 started in this environment, uses DSP, thus preventing oss-plugin from
 working.
 
@@ -32,7 +32,7 @@ Plugin de salida para XMMS para uso con el paquete aRts.
 
 %description -l pl
 Ta wtyczka pozwala XMMS-owi odtwarzaæ muzykê poprzez serwer aRts.
-Obowi±zkowy pakiet dla u¿ytkowników KDE2, poniewa¿ aRts, domy¶lnie
+Obowi±zkowy pakiet dla u¿ytkowników KDE, poniewa¿ aRts, domy¶lnie
 uruchamiany w tym ¶rodowisku, u¿ywa DSP tym samym uniemo¿liwiaj±c
 dzia³anie wtyczce OSS.
 
@@ -43,7 +43,6 @@ Plugin de saída para o XMMS trabalhar com o servidor de som aRts.
 %setup -q -n arts_output-%{version}
 
 %build
-rm -f missing
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
@@ -59,11 +58,13 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+rm -f $RPM_BUILD_ROOT%{xmms_output_plugindir}/*.la
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %doc README NEWS AUTHORS
-%attr(755,root,root) %{xmms_output_plugindir}/*
 %attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{xmms_output_plugindir}/*.so
