@@ -4,18 +4,17 @@ Summary(pl):	Wtyczka dla XMMS odtwarzaj±ca przez aRts.
 Summary(pt_BR):	Plugin de saída para o XMMS para uso com o servidor de som aRts.
 Name:		xmms-output-arts
 Version:	0.4
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Multimedia
 Group(de):	X11/Applikationen/Multimedia
 Group(pl):	X11/Aplikacje/Multimedia
 Source0:	http://home.earthlink.net/~bheath/xmms-arts/xmmsarts-%{version}.tar.gz
-Patch0:		%{name}-malloc.patch
+Patch0:		%{name}-nocmallocc.patch
 URL:		http://home.earthlink.net/~bheath/xmms-arts/
 BuildRequires:	arts-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	ccmalloc
 BuildRequires:	gtk+-devel
 BuildRequires:	libtool
 BuildRequires:	xmms-devel
