@@ -18,6 +18,7 @@ BuildRequires:	gtk+-devel
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
+BuildRequires:	glib2-devel
 Requires:	xmms
 Provides:	xmms-output-plugin
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
