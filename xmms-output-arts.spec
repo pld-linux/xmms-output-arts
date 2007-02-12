@@ -1,7 +1,7 @@
 Summary:	Output plugin for XMMS for use with the aRts sound server
-Summary(es):	Plugin de salida para XMMS para uso con el paquete aRts
-Summary(pl):	Wtyczka wyj¶ciowa dla XMMS-a odtwarzaj±ca przez aRts
-Summary(pt_BR):	Plugin de saída para o XMMS para uso com o servidor de som aRts
+Summary(es.UTF-8):   Plugin de salida para XMMS para uso con el paquete aRts
+Summary(pl.UTF-8):   Wtyczka wyjÅ›ciowa dla XMMS-a odtwarzajÄ…ca przez aRts
+Summary(pt_BR.UTF-8):   Plugin de saÃ­da para o XMMS para uso com o servidor de som aRts
 Name:		xmms-output-arts
 Version:	0.7.1
 Release:	1
@@ -27,17 +27,17 @@ is a must-have for KDE users, because aRts, which is by default
 started in this environment, uses DSP, thus preventing oss-plugin from
 working.
 
-%description -l es
+%description -l es.UTF-8
 Plugin de salida para XMMS para uso con el paquete aRts.
 
-%description -l pl
-Ta wtyczka pozwala XMMS-owi odtwarzaæ muzykê poprzez serwer aRts.
-Obowi±zkowy pakiet dla u¿ytkowników KDE, poniewa¿ aRts, domy¶lnie
-uruchamiany w tym ¶rodowisku, u¿ywa DSP tym samym uniemo¿liwiaj±c
-dzia³anie wtyczce OSS.
+%description -l pl.UTF-8
+Ta wtyczka pozwala XMMS-owi odtwarzaÄ‡ muzykÄ™ poprzez serwer aRts.
+ObowiÄ…zkowy pakiet dla uÅ¼ytkownikÃ³w KDE, poniewaÅ¼ aRts, domyÅ›lnie
+uruchamiany w tym Å›rodowisku, uÅ¼ywa DSP tym samym uniemoÅ¼liwiajÄ…c
+dziaÅ‚anie wtyczce OSS.
 
-%description -l pt_BR
-Plugin de saída para o XMMS trabalhar com o servidor de som aRts.
+%description -l pt_BR.UTF-8
+Plugin de saÃ­da para o XMMS trabalhar com o servidor de som aRts.
 
 %prep
 %setup -q -n arts_output-%{version}
